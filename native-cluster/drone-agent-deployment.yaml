@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - image: drone/agent:0.8
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         name: drone-agent
         volumeMounts:
           # Enables Docker in Docker
